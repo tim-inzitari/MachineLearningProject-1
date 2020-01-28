@@ -4,11 +4,11 @@ pokemon = pd.read_csv('Pokemon.csv', sep=',')
 pokemon.head()
 
 # create a mapping from fruit label value to fruit name to make results easier to interpret
-lookup_pokemon_name = dict(zip(pokemon.pokemon_label.unique(), pokemon.pokemon_name.unique()))
-print(lookup_pokemon_name)
+lookup_fruit_name = dict(zip(pokemon.fruit_label.unique(), pokemon.fruit_name.unique()))
+print(lookup_fruit_name)
 
-X = pokemon[['Name', 'Type 1', 'Type 2', 'Total', 'HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed', 'Generation', 'Legendary']]
-y = pokemon['#']
+X = pokemon[['Type 1', 'Type 2', 'Total', 'HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed', 'Generation']]
+y = pokemon['Legendary']
 
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
