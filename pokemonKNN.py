@@ -1,14 +1,14 @@
 
 import pandas as pd
-fruits = pd.read_csv('fruit_data_with_colors.txt', sep='\t')
-fruits.head()
+pokemon = pd.read_csv('Pokemon.csv', sep=',')
+pokemon.head()
 
 # create a mapping from fruit label value to fruit name to make results easier to interpret
-lookup_fruit_name = dict(zip(fruits.fruit_label.unique(), fruits.fruit_name.unique()))
-print(lookup_fruit_name)
+lookup_pokemon_name = dict(zip(pokemon.pokemon_label.unique(), pokemon.pokemon_name.unique()))
+print(lookup_pokemon_name)
 
-X = fruits[['height', 'width', 'mass', 'color_score']]
-y = fruits['fruit_label']
+X = pokemon[['Name', 'Type 1', 'Type 2', 'Total', 'HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed', 'Generation', 'Legendary']]
+y = pokemon['#']
 
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
@@ -42,12 +42,12 @@ knn.score(X_test, y_test)
 
 # ## Use the trained k-NN classifier model to classify new, previously unseen objects
 # first example: a small fruit with mass 20g, color_score = 5.5, width 4.3 cm, height 5.5 cm
-fruit_prediction = knn.predict([[10.0, 4.3, 20, 5.5]])
-print(lookup_fruit_name[fruit_prediction[0]])
+pokemon_prediction = knn.predict([[10.0, 4.3, 20, 5.5]])
+print(lookup_fruit_name[pokemon_prediction[0]])
 
 # second example: a larger, elongated fruit with mass 100g, width 6.3 cm, height 8.5 cm, color_score 6.3
-fruit_prediction = knn.predict([[8.5, 6.3, 100, 6.3]])
-print(lookup_fruit_name[fruit_prediction[0]])
+pokemon_prediction = knn.predict([[8.5, 6.3, 100, 6.3]])
+print(lookup_pokemon_name[pokemon_prediction[0]])
 
 # How sensitive is k-NN classification accuracy to the choice of the 'k' parameter?
 k_range = range(1, 20)
