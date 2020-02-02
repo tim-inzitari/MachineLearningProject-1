@@ -85,12 +85,12 @@ knn.score(X_test, y_test)
 
 # ## Use the trained k-NN classifier model to classify new, previously unseen objects
 # first example: a small fruit with mass 20g, color_score = 5.5, width 4.3 cm, height 5.5 cm
-pokemon_prediction = knn.predict(ct.transform(['Normal', 'Flying', 349, 63, 60, 55, 50, 50, 71]))
+pokemon_prediction = knn.predict([[1, 3, 349, 63, 60, 55, 50, 50, 71]])
 print(pokemon_prediction[0])
 # print(lookup_pokemon_name[pokemon_prediction[0]])
 
 # second example: a larger, elongated fruit with mass 100g, width 6.3 cm, height 8.5 cm, color_score 6.3
-pokemon_prediction = knn.predict([['Bug', 'Flying', 390, 55, 35, 50, 55, 110, 85]])
+pokemon_prediction = knn.predict([[7, 3, 390, 55, 35, 50, 55, 110, 85]])
 print(pokemon_prediction[0])
 # print(lookup_pokemon_name[pokemon_prediction[0]])
 
