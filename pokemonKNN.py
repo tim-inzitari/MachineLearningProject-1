@@ -1,5 +1,6 @@
 
 import pandas as pd
+from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from matplotlib import cm
 from pandas.plotting import scatter_matrix
@@ -74,17 +75,17 @@ plt.show()
 # How sensitive is k-NN classification accuracy to the train/test split proportion?
 
 t = [0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2]
-knn = KNeighborsClassifier(n_neighbors=5)
+knn = KNeighborsClassifier(n_neighbors=bestK)
 plt.figure()
 previousLargestSplit = 0
 for s in t:
     scores = []   
     for i in range(1, 1000):
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=1-s)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0, test_size=1-s)
         knn.fit(X_train, y_train)
         scores.append(knn.score(X_test, y_test))
     plt.plot(s, np.mean(scores), 'bo')
-    if (np.mean(scores) > previousLargestSplit):
+    if np.mean(scores) > previousLargestSplit:
         previousLargestSplit = np.mean(scores)
         bestSplit = s
 
@@ -92,11 +93,32 @@ plt.xlabel('Training set proportion (%)')
 plt.ylabel('accuracy')
 plt.show()
 
+dist = ['euclidean', 'manhattan']
+bestDist = ''
+previousScore = 0
+scores = []
+plt.figure()
+for s in dist:
+    knn = KNeighborsClassifier(n_neighbors=bestK, metric=s)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0, test_size=1-bestSplit)
+    knn.fit(X_train, y_train)
+    scores.append(knn.score(X_test, y_test))
+    if previousScore < knn.score(X_test, y_test):
+        previousScore = knn.score(X_test, y_test)
+        bestDist = s
+    plt.plot(s, np.mean(scores), 'bo')
+plt.xlabel('Training set proportion (%)')
+plt.ylabel('accuracy')
+plt.show()
+
 # using best K and best split
-knn = KNeighborsClassifier(n_neighbors=bestK)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=1-bestSplit)
-knn.fit(X_train, y_train)
-print('Using best K(' + str(bestK) + ') and best split(' + str(bestSplit) + '), the accuracy is ' + str(knn.score(X_test, y_test)))
+knnBest = KNeighborsClassifier(n_neighbors=bestK, metric=bestDist)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0, test_size=1-bestSplit)
+knnBest.fit(X_train, y_train)
+print('Using best K(' + str(bestK) + ') and best split(' + str(bestSplit) + ') and best dist(' + str(bestDist) + ')')
+print('the accuracy is ' + str(knnBest.score(X_test, y_test)))
+print(confusion_matrix(knnBest.predict(X_test), y_test))
+
 
 
 
