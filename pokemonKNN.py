@@ -56,7 +56,7 @@ pokemon_prediction = knn.predict([[7, 3, 390, 55, 35, 50, 55, 110, 85]])
 print("Are the stats of Pokemon 2 that of a legendary Pokemon?: %s " % pokemon_prediction[0])
 
 # Third Example: The Legendary Pokemon Palkia
-pokemon_prediction = knn.predict([[11,15,679,91,121,99,151,121,101]])
+pokemon_prediction = knn.predict([[11, 15, 679, 91, 121, 99, 151, 121, 101]])
 print("Are the stats of Pokemon 3 that of a legendary Pokemon?: %s " % pokemon_prediction[0])
 
 
