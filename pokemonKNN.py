@@ -52,7 +52,7 @@ knn.score(X_test, y_test)
 pokemon_prediction = knn.predict([[11, 15, 684, 91, 121, 99, 151, 121, 101]])
 print("Are the stats of Pokemon 1 that of a legendary Pokemon?: %s " % pokemon_prediction[0])
 
-# second example: a larger, elongated fruit with mass 100g, width 6.3 cm, height 8.5 cm, color_score 6.3
+# second example: chosen similar to that of a non-legendary pokemon
 pokemon_prediction = knn.predict([[7, 3, 390, 55, 35, 50, 55, 110, 85]])
 print("Are the stats of Pokemon 2 that of a legendary Pokemon?: %s " % pokemon_prediction[0])
 
