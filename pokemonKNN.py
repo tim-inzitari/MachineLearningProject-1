@@ -20,10 +20,76 @@ y = pokemon['Legendary']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 
+# DESCRIPTION OF EACH STATS MEAN MEDIAN MODE ECT
+
+# type1
+print("-------------------------------------------------------------------")
+print("Stat:Type1 - Descriptions of DataSet ")
+print(pokemon['Type_1'].describe())
+print("-------------------------------------------------------------------\n")
+
+# type2
+print("-------------------------------------------------------------------")
+print("Stat:Type - Descriptions of DataSet ")
+print(pokemon['Type_2'].describe())
+print("-------------------------------------------------------------------\n")
+
+# total
+print("-------------------------------------------------------------------")
+print("Stat:Total - Descriptions of DataSet ")
+print(pokemon['Total'].describe())
+print("-------------------------------------------------------------------\n")
+
+# HP
+print("-------------------------------------------------------------------")
+print("Stat:HP - Descriptions of DataSet ")
+print(pokemon['HP'].describe())
+print("-------------------------------------------------------------------\n")
+
+# Attack
+print("-------------------------------------------------------------------")
+print("Stat:Attack - Descriptions of DataSet ")
+print(pokemon['Attack'].describe())
+print("-------------------------------------------------------------------\n")
+
+# Defense
+print("-------------------------------------------------------------------")
+print("Stat:Defense - Descriptions of DataSet ")
+print(pokemon['Defense'].describe())
+print("-------------------------------------------------------------------\n")
+
+# Special Attack
+print("-------------------------------------------------------------------")
+print("Stat:Special Attack - Descriptions of DataSet ")
+print(pokemon['Sp._Atk'].describe())
+print("-------------------------------------------------------------------\n")
+
+# Special Defense
+print("-------------------------------------------------------------------")
+print("Stat:Special Defense - Descriptions of DataSet ")
+print(pokemon['Sp._Def'].describe())
+print("-------------------------------------------------------------------\n")
+
+# Speed
+print("-------------------------------------------------------------------")
+print("Stat:Speed - Descriptions of DataSet ")
+print(pokemon['Speed'].describe())
+print("-------------------------------------------------------------------\n")
+
+# END STAT DESCRIPTIONS
+
+# count number of legendary and not legendary pokemon
+print("-------------------------------------------------------------------")
+print("Count of Legendary Pokemon vs Not Legendary, True is Legendary False is not")
+print(pokemon['Legendary'].value_counts())
+print("-------------------------------------------------------------------\n")
+
 # plotting a scatter matrix
 
 cmap = cm.get_cmap('gnuplot')
 scatter = scatter_matrix(X_train, c=y_train, marker='o', s=40, hist_kwds={'bins': 15}, figsize=(9, 9), cmap=cmap)
+
+
 
 # plotting a 3D scatter plot
 
