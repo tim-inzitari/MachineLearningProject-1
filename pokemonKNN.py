@@ -38,7 +38,6 @@ print("Stat:Type - Descriptions of DataSet ")
 print(pokemon['Type_2'].describe())
 print("Median of Type_2: %d" % np.median(pokemon['Type_2']))
 print("Mode of Type 2: ",  stats.mode(pokemon['Type_2']))
-
 print("-------------------------------------------------------------------\n")
 
 # total
@@ -47,7 +46,6 @@ print("Stat:Total - Descriptions of DataSet ")
 print(pokemon['Total'].describe())
 print("Median of Total: %d" % np.median(pokemon['Total']))
 print("Mode of Total: ",  stats.mode(pokemon['Total']))
-
 print("-------------------------------------------------------------------\n")
 
 # HP
@@ -64,7 +62,6 @@ print("Stat:Attack - Descriptions of DataSet ")
 print(pokemon['Attack'].describe())
 print("Median of Attack: %d" % np.median(pokemon['Attack']))
 print("Mode of Attack: ",  stats.mode(pokemon['Attack']))
-
 print("-------------------------------------------------------------------\n")
 
 # Defense
