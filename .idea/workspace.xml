@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1421b08d-9d8e-4c4d-93d3-8f5402ca03f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemonKNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/pokemonKNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581300535087</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Stat Descriptions and Class Counts">
+      <created>1581303310905</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581303310905</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,17 +172,18 @@
     <MESSAGE value="Added 4th Trial" />
     <MESSAGE value="Added ability to input any data to test, Disabled by default" />
     <MESSAGE value="Comment Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comment Update" />
+    <MESSAGE value="Added Stat Descriptions and Class Counts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Stat Descriptions and Class Counts" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580229548815">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580229548815" />
-    <state x="119" y="35" width="821" height="814" key="CommitChangelistDialog2" timestamp="1581300534796">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state x="119" y="34" width="821" height="814" key="CommitChangelistDialog2" timestamp="1581303310442">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="119" y="34" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581300291207" />
+    <state x="119" y="34" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581303310442" />
     <state x="119" y="54" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1581295723306" />
     <state x="119" y="35" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1581300534796" />
     <state x="275" y="330" width="821" height="814" key="CommitChangelistDialog2/70.27.2490.1413@70.27.2490.1413" timestamp="1580593620015" />
@@ -217,10 +224,10 @@
     </state>
     <state x="424" y="127" width="900" height="722" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1581292899037" />
     <state x="804" y="368" width="1022" height="737" key="SettingsEditor/70.27.2490.1413@70.27.2490.1413" timestamp="1580400275913" />
-    <state x="125" y="282" width="503" height="313" key="Vcs.Push.Dialog.v2" timestamp="1581300688145">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state x="125" y="281" width="503" height="313" key="Vcs.Push.Dialog.v2" timestamp="1581303317323">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="125" y="281" width="503" height="313" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581300356321" />
+    <state x="125" y="281" width="503" height="313" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581303317323" />
     <state x="125" y="282" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1581300688145" />
     <state x="125" y="282" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1581300540842" />
     <state x="286" y="469" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1580593653629" />
