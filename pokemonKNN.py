@@ -1,4 +1,7 @@
-
+# Machine Learning Project 1
+# KNN with Pokemon
+# Justin Kaminski, Tim Inzitari, Josh Foss, & Alex Helmick
+# Feb 10th 2020
 import pandas as pd
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
@@ -150,7 +153,7 @@ print("Are the stats of Pokemon 3 that of a legendary Pokemon?: %s " % pokemon_p
 pokemon_prediction = knn.predict([[6, 5, 580, 75, 100, 105, 95, 85, 120]])
 print("Are the stats of Pokemon 4 that of a legendary Pokemon?: %s " % pokemon_prediction[0])
 
-#-----------------------------------------
+# -----------------------------------
 # USER INPUT TEST AMOUNT ##
 # kth Pokemon tests, change to Y to enable
 another = "N"
