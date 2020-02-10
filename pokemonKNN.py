@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import axes3d   # must keep
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
+from scipy import stats
+
 
 pokemon = pd.read_csv('Pokemon.csv', sep=',')
 pokemon.columns = pokemon.columns.str.replace(' ', '_')
@@ -26,54 +28,75 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 print("-------------------------------------------------------------------")
 print("Stat:Type1 - Descriptions of DataSet ")
 print(pokemon['Type_1'].describe())
+print("Median of Type 1: %d" % np.median(pokemon['Type_1']))
+print("Mode of Type 1: ",  stats.mode(pokemon['Type_1']))
 print("-------------------------------------------------------------------\n")
 
 # type2
 print("-------------------------------------------------------------------")
 print("Stat:Type - Descriptions of DataSet ")
 print(pokemon['Type_2'].describe())
+print("Median of Type_2: %d" % np.median(pokemon['Type_2']))
+print("Mode of Type 2: ",  stats.mode(pokemon['Type_2']))
+
 print("-------------------------------------------------------------------\n")
 
 # total
 print("-------------------------------------------------------------------")
 print("Stat:Total - Descriptions of DataSet ")
 print(pokemon['Total'].describe())
+print("Median of Total: %d" % np.median(pokemon['Total']))
+print("Mode of Total: ",  stats.mode(pokemon['Total']))
+
 print("-------------------------------------------------------------------\n")
 
 # HP
 print("-------------------------------------------------------------------")
 print("Stat:HP - Descriptions of DataSet ")
 print(pokemon['HP'].describe())
+print("Median of HP: %d" % np.median(pokemon['HP']))
+print("Mode of HP: ",  stats.mode(pokemon['HP']))
 print("-------------------------------------------------------------------\n")
 
 # Attack
 print("-------------------------------------------------------------------")
 print("Stat:Attack - Descriptions of DataSet ")
 print(pokemon['Attack'].describe())
+print("Median of Attack: %d" % np.median(pokemon['Attack']))
+print("Mode of Attack: ",  stats.mode(pokemon['Attack']))
+
 print("-------------------------------------------------------------------\n")
 
 # Defense
 print("-------------------------------------------------------------------")
 print("Stat:Defense - Descriptions of DataSet ")
 print(pokemon['Defense'].describe())
+print("Median of Defense: %d" % np.median(pokemon['Defense']))
+print("Mode of Defense: ",  stats.mode(pokemon['Defense']))
 print("-------------------------------------------------------------------\n")
 
 # Special Attack
 print("-------------------------------------------------------------------")
 print("Stat:Special Attack - Descriptions of DataSet ")
 print(pokemon['Sp._Atk'].describe())
+print("Median of Special Attack: %d" % np.median(pokemon['Sp._Atk']))
+print("Mode of Special Attack: ",  stats.mode(pokemon['Sp._Atk']))
 print("-------------------------------------------------------------------\n")
 
 # Special Defense
 print("-------------------------------------------------------------------")
 print("Stat:Special Defense - Descriptions of DataSet ")
 print(pokemon['Sp._Def'].describe())
+print("Median of Special Defense: %d" % np.median(pokemon['Sp._Def']))
+print("Mode of Special Defense: ",  stats.mode(pokemon['Sp._Def']))
 print("-------------------------------------------------------------------\n")
 
 # Speed
 print("-------------------------------------------------------------------")
 print("Stat:Speed - Descriptions of DataSet ")
 print(pokemon['Speed'].describe())
+print("Median of Speed: %d" % np.median(pokemon['Speed']))
+print("Mode of Speed: ",  stats.mode(pokemon['Speed']))
 print("-------------------------------------------------------------------\n")
 
 # END STAT DESCRIPTIONS
