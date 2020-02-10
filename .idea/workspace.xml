@@ -143,9 +143,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580229548815" />
-    <state x="119" y="54" width="821" height="814" key="CommitChangelistDialog2" timestamp="1581295723306">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state x="119" y="34" width="821" height="814" key="CommitChangelistDialog2" timestamp="1581300228101">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state x="119" y="34" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581300228101" />
     <state x="119" y="54" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1581295723306" />
     <state x="119" y="35" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1581294602176" />
     <state x="275" y="330" width="821" height="814" key="CommitChangelistDialog2/70.27.2490.1413@70.27.2490.1413" timestamp="1580593620015" />
