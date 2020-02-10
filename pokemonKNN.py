@@ -161,6 +161,8 @@ while another == "Y":
     print("Are the stats of this Pokemon that of a legendary Pokemon?: %s " % pokemon_prediction[0])
     another = input("Another? Y for Yes: ")
 
+# END USER INPUT AMOUNT #
+
 bestSplit = 0
 bestK = 0
 # How sensitive is k-NN classification accuracy to the choice of the 'k' parameter?
