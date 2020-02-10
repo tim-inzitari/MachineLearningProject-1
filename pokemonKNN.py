@@ -64,7 +64,7 @@ print("Are the stats of Pokemon 3 that of a legendary Pokemon?: %s " % pokemon_p
 pokemon_prediction = knn.predict([[6, 5, 580, 75, 100, 105, 95, 85, 120]])
 print("Are the stats of Pokemon 4 that of a legendary Pokemon?: %s " % pokemon_prediction[0])
 
-## USER INPUT TEST AMOUNT ##
+# USER INPUT TEST AMOUNT ##
 # kth Pokemon tests, change to Y to enable
 another = "N"
 while another == "Y":

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1421b08d-9d8e-4c4d-93d3-8f5402ca03f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Distance.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pokemonKNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/pokemonKNN.py" afterDir="false" />
     </list>
@@ -17,6 +16,7 @@
   </component>
   <component name="ProjectId" id="1X21bI7FGFNw7J1Jw77bjmB3OVw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -129,24 +129,40 @@
       <option name="project" value="LOCAL" />
       <updated>1581295723638</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added ability to input any data to test, Disabled by default">
+      <created>1581300228427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581300228427</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Comment Update">
+      <created>1581300249858</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581300249858</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added a third test that results in true" />
     <MESSAGE value="Added 4th Trial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 4th Trial" />
+    <MESSAGE value="Added ability to input any data to test, Disabled by default" />
+    <MESSAGE value="Comment Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comment Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580229548815">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580229548815" />
-    <state x="119" y="34" width="821" height="814" key="CommitChangelistDialog2" timestamp="1581300228101">
+    <state x="119" y="34" width="821" height="814" key="CommitChangelistDialog2" timestamp="1581300249556">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="119" y="34" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581300228101" />
+    <state x="119" y="34" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581300249556" />
     <state x="119" y="54" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1581295723306" />
     <state x="119" y="35" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1581294602176" />
     <state x="275" y="330" width="821" height="814" key="CommitChangelistDialog2/70.27.2490.1413@70.27.2490.1413" timestamp="1580593620015" />
@@ -195,9 +211,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580229475598" />
-    <state x="563" y="388" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581295728833">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state x="563" y="388" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581300278506">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state x="563" y="388" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1581300278506" />
     <state x="563" y="388" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.826@0.23.1440.826" timestamp="1581295728833" />
     <state x="302" y="527" width="758" height="420" key="git4idea.merge.GitPullDialog" timestamp="1581008721560">
       <screen x="70" y="27" width="2490" height="1413" />
