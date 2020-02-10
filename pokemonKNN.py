@@ -49,11 +49,16 @@ knn.score(X_test, y_test)
 # ## Use the trained k-NN classifier model to classify new, previously unseen objects
 # 
 pokemon_prediction = knn.predict([[1, 3, 349, 63, 60, 55, 50, 50, 71]])
-print(pokemon_prediction[0])
+print("Are the stats of Pokemon 1 that of a legendary Pokemon?: %s " % pokemon_prediction[0])
 
 # second example: a larger, elongated fruit with mass 100g, width 6.3 cm, height 8.5 cm, color_score 6.3
 pokemon_prediction = knn.predict([[7, 3, 390, 55, 35, 50, 55, 110, 85]])
-print(pokemon_prediction[0])
+print("Are the stats of Pokemon 2 that of a legendary Pokemon?: %s " % pokemon_prediction[0])
+
+# Third Example: The Legendary Pokemon Palkia
+pokemon_prediction = knn.predict([[11,15,679,91,121,99,151,121,101]])
+print("Are the stats of Pokemon 3 that of a legendary Pokemon?: %s " % pokemon_prediction[0])
+
 
 bestSplit = 0
 bestK = 0
