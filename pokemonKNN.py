@@ -64,6 +64,16 @@ print("Are the stats of Pokemon 3 that of a legendary Pokemon?: %s " % pokemon_p
 pokemon_prediction = knn.predict([[6, 5, 580, 75, 100, 105, 95, 85, 120]])
 print("Are the stats of Pokemon 4 that of a legendary Pokemon?: %s " % pokemon_prediction[0])
 
+# kth Pokemon tests, change to Y to enable
+another = "N"
+while another == "Y":
+    type1, type2, HP, Att, Def, spAtt, spDef, Speed = input("Type1 Type2 HP Att Def spAtt spDef Speed: ").split()
+    Total = str(int(HP) + int(Att) + int(Def) + int(spAtt) + int(spDef) + int(Speed))
+    pokemon_prediction = knn.predict([[type1, type2, Total, HP, Att, Def, spAtt, spDef, Speed]])
+    print("Total: %s" % Total)
+    print("Are the stats of this Pokemon that of a legendary Pokemon?: %s " % pokemon_prediction[0])
+    another = input("Another? Y for Yes: ")
+
 bestSplit = 0
 bestK = 0
 # How sensitive is k-NN classification accuracy to the choice of the 'k' parameter?
@@ -116,7 +126,7 @@ for s in dist:
         previousScore = knn.score(X_test, y_test)
         bestDist = s
     plt.plot(s, np.mean(scores), 'bo')
-plt.xlabel('Training set proportion (%)')
+plt.xlabel('Distance Used')
 plt.ylabel('accuracy')
 plt.show()
 
