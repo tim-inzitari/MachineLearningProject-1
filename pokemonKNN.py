@@ -27,78 +27,79 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 
 # DESCRIPTION OF EACH STATS MEAN MEDIAN MODE ECT
 
-# type1
+p = pokemon[['Total', 'HP', 'Attack', 'Defense', 'Sp._Atk', 'Sp._Def', 'Speed', 'Legendary']]
+legend = p[p.Legendary == True]
+nL = p[p.Legendary == False]
+
 print("-------------------------------------------------------------------")
-print("Stat:Type1 - Descriptions of DataSet ")
-print(pokemon['Type_1'].describe())
-print("Median of Type 1: %d" % np.median(pokemon['Type_1']))
-print("Mode of Type 1: ",  stats.mode(pokemon['Type_1']))
+print("Legendary Total")
+print(legend['Total'].describe())
+print("Mode of Legendary Total: ", stats.mode(legend['Total']))
+print("------")
+print("Non Legendary Total")
+print(nL['Total'].describe())
+print("Mode of Non Legendary Total: ", stats.mode(nL['Total']))
 print("-------------------------------------------------------------------\n")
 
-# type2
 print("-------------------------------------------------------------------")
-print("Stat:Type - Descriptions of DataSet ")
-print(pokemon['Type_2'].describe())
-print("Median of Type_2: %d" % np.median(pokemon['Type_2']))
-print("Mode of Type 2: ",  stats.mode(pokemon['Type_2']))
+print("Legendary HP")
+print(legend['HP'].describe())
+print("Mode of Legendary HP: ", stats.mode(legend['HP']))
+print("------")
+print("Non Legendary HP")
+print(nL['HP'].describe())
+print("Mode of Non Legendary HP: ", stats.mode(nL['HP']))
 print("-------------------------------------------------------------------\n")
 
-# total
 print("-------------------------------------------------------------------")
-print("Stat:Total - Descriptions of DataSet ")
-print(pokemon['Total'].describe())
-print("Median of Total: %d" % np.median(pokemon['Total']))
-print("Mode of Total: ",  stats.mode(pokemon['Total']))
+print("Legendary Attack")
+print(legend['Attack'].describe())
+print("Mode of Legendary Attack: ", stats.mode(legend['Attack']))
+print("------")
+print("Non Legendary Attack")
+print(nL['Attack'].describe())
+print("Mode of Non Legendary Attack: ", stats.mode(nL['Attack']))
 print("-------------------------------------------------------------------\n")
 
-# HP
 print("-------------------------------------------------------------------")
-print("Stat:HP - Descriptions of DataSet ")
-print(pokemon['HP'].describe())
-print("Median of HP: %d" % np.median(pokemon['HP']))
-print("Mode of HP: ",  stats.mode(pokemon['HP']))
+print("Legendary Defense")
+print(legend['Defense'].describe())
+print("Mode of Legendary Defense: ", stats.mode(legend['Defense']))
+print("------")
+print("Non Legendary Defense")
+print(nL['Defense'].describe())
+print("Mode of Non Legendary Defense: ", stats.mode(nL['Defense']))
 print("-------------------------------------------------------------------\n")
 
-# Attack
 print("-------------------------------------------------------------------")
-print("Stat:Attack - Descriptions of DataSet ")
-print(pokemon['Attack'].describe())
-print("Median of Attack: %d" % np.median(pokemon['Attack']))
-print("Mode of Attack: ",  stats.mode(pokemon['Attack']))
+print("Legendary Sp._Atk")
+print(legend['Sp._Atk'].describe())
+print("Mode of Legendary Special Attack: ", stats.mode(legend['Sp._Atk']))
+print("------")
+print("Non Legendary Special Attack")
+print(nL['Sp._Atk'].describe())
+print("Mode of Non Legendary Special Attack: ", stats.mode(nL['Sp._Atk']))
 print("-------------------------------------------------------------------\n")
 
-# Defense
 print("-------------------------------------------------------------------")
-print("Stat:Defense - Descriptions of DataSet ")
-print(pokemon['Defense'].describe())
-print("Median of Defense: %d" % np.median(pokemon['Defense']))
-print("Mode of Defense: ",  stats.mode(pokemon['Defense']))
+print("Legendary Special Defense")
+print(legend['Sp._Def'].describe())
+print("Mode of Legendary Special Defense: ", stats.mode(legend['Sp._Def']))
+print("------")
+print("Non Legendary Special Defense")
+print(nL['Sp._Def'].describe())
+print("Mode of Non Legendary Special Defense: ", stats.mode(nL['Sp._Def']))
 print("-------------------------------------------------------------------\n")
 
-# Special Attack
 print("-------------------------------------------------------------------")
-print("Stat:Special Attack - Descriptions of DataSet ")
-print(pokemon['Sp._Atk'].describe())
-print("Median of Special Attack: %d" % np.median(pokemon['Sp._Atk']))
-print("Mode of Special Attack: ",  stats.mode(pokemon['Sp._Atk']))
+print("Legendary Speed")
+print(legend['Speed'].describe())
+print("Mode of Legendary Speed: ", stats.mode(legend['Speed']))
+print("------")
+print("Non Legendary Speed")
+print(nL['Speed'].describe())
+print("Mode of Non Legendary Speed: ", stats.mode(nL['Speed']))
 print("-------------------------------------------------------------------\n")
-
-# Special Defense
-print("-------------------------------------------------------------------")
-print("Stat:Special Defense - Descriptions of DataSet ")
-print(pokemon['Sp._Def'].describe())
-print("Median of Special Defense: %d" % np.median(pokemon['Sp._Def']))
-print("Mode of Special Defense: ",  stats.mode(pokemon['Sp._Def']))
-print("-------------------------------------------------------------------\n")
-
-# Speed
-print("-------------------------------------------------------------------")
-print("Stat:Speed - Descriptions of DataSet ")
-print(pokemon['Speed'].describe())
-print("Median of Speed: %d" % np.median(pokemon['Speed']))
-print("Mode of Speed: ",  stats.mode(pokemon['Speed']))
-print("-------------------------------------------------------------------\n")
-
 # END STAT DESCRIPTIONS
 
 # count number of legendary and not legendary pokemon
