@@ -25,7 +25,7 @@ y = pokemon['Legendary']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 
-# DESCRIPTION OF EACH STATS MEAN MEDIAN MODE ECT
+# DESCRIPTION OF EACH STATS MEAN MEDIAN MODE ETC
 
 p = pokemon[['Total', 'HP', 'Attack', 'Defense', 'Sp._Atk', 'Sp._Def', 'Speed', 'Legendary']]
 legend = p[p.Legendary == True]

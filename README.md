@@ -1,6 +1,10 @@
 # MachineLearningProject-1
 
+Data retrieved from
 https://www.kaggle.com/abcsds/pokemon
+
+Presentation link
+https://docs.google.com/presentation/d/1jJ7QUKAeDuxVBW3Mo7LxjcvOMOiJ9m1YdyASbNFMhMw/edit?usp=sharing
 
 Key for types converted into float values:
 
