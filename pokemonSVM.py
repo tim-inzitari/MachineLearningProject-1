@@ -1,25 +1,21 @@
 # reading and writing data
 import pandas as pd
-fruits = pd.read_csv('fruit_data_with_colors.txt', sep='\t')
-fruits.head()
 
-# create a mapping from fruit label value to fruit name to make results easier to interpret
-lookup_fruit_name = dict(zip(fruits.fruit_label.unique(), fruits.fruit_name.unique()))
-print(lookup_fruit_name)
 
-X = fruits[['height', 'width', 'mass', 'color_score']]
-y = fruits['fruit_label']
+#import pokemon data
+pokemon = pd.read_csv('Pokemon.csv', sep=',')
+pokemon.columns = pokemon.columns.str.replace(' ', '_')
+pokemon.head()
+
+X = pokemon[['Type_1', 'Type_2', 'Total', 'HP', 'Attack', 'Defense', 'Sp._Atk', 'Sp._Def', 'Speed']]
+Type_1 = X['Type_1']
+
+y = pokemon['Legendary']
 
 from sklearn.model_selection import train_test_split
 #random_state: set seed for random# generator
 #test_size: default 25% testing, 75% training
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.25, random_state=42)
-
-# partition the data into two classes
-y_train_1 = y_train == 1  # apple in True class, others in False class
-y_test_1 = y_test == 1   # apple in True class, others in False class
-y_train = 2 - y_train_1  # apple = 1; others =2
-y_test = 2 - y_test_1
 
 seeData = True
 if seeData:
@@ -34,10 +30,10 @@ if seeData:
     from mpl_toolkits.mplot3d import axes3d   # must keep
     fig = plt.figure()
     ax = fig.add_subplot(111, projection = '3d')
-    ax.scatter(X_train['width'], X_train['height'], X_train['color_score'], c = y_train, marker = 'o', s=100)
-    ax.set_xlabel('width')
-    ax.set_ylabel('height')
-    ax.set_zlabel('color_score')
+    ax.scatter(X_train['Total'], X_train['Attack'], X_train['HP'], c = y_train, marker = 'o', s=100)
+    ax.set_xlabel('Total')
+    ax.set_ylabel('Attack')
+    ax.set_zlabel('HP')
     plt.show()
 
 # Create classifier object: kNN
