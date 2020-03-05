@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1421b08d-9d8e-4c4d-93d3-8f5402ca03f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/MachineLearningProject-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MachineLearningProject-1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemonKNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/pokemonKNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokemonSVM.py" beforeDir="false" afterPath="$PROJECT_DIR$/pokemonSVM.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pokemonKNN">
+  <component name="RunManager" selected="Python.pokemonSVM">
     <configuration name="fruitKNN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MachineLearningProject-1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -57,7 +59,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pokemonKNN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pokemonSVM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MachineLearningProject-1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -69,7 +71,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pokemonKNN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pokemonSVM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,9 +80,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.fruitKNN" />
+      <item itemvalue="Python.pokemonSVM" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.pokemonKNN" />
+        <item itemvalue="Python.pokemonSVM" />
         <item itemvalue="Python.fruitKNN" />
       </list>
     </recent_temporary>
@@ -220,10 +226,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Comment Update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580229548815">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="320" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583382002686">
+      <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580229548815" />
+    <state x="320" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.2490.1413@70.27.2490.1413" timestamp="1583382002686" />
     <state x="119" y="33" width="821" height="814" key="CommitChangelistDialog2" timestamp="1581359430296">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
@@ -232,47 +239,47 @@
     <state x="119" y="54" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1581295723306" />
     <state x="119" y="35" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1581300534796" />
     <state x="275" y="330" width="821" height="814" key="CommitChangelistDialog2/70.27.2490.1413@70.27.2490.1413" timestamp="1580593620015" />
-    <state width="1277" height="187" key="GridCell.Tab.0.bottom" timestamp="1581383287502">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1222" height="394" key="GridCell.Tab.0.bottom" timestamp="1583421518494">
+      <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1580307611247" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580240783991" />
     <state width="593" height="187" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1581362029350" />
     <state width="1277" height="187" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1581383287502" />
     <state width="1111" height="187" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1581301563137" />
-    <state width="1209" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1581023614995" />
-    <state width="1277" height="187" key="GridCell.Tab.0.center" timestamp="1581383287500">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1222" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1583421518494" />
+    <state width="1222" height="394" key="GridCell.Tab.0.center" timestamp="1583421518492">
+      <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1580307611246" />
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580240783991" />
     <state width="593" height="187" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1581362029349" />
     <state width="1277" height="187" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1581383287500" />
     <state width="1111" height="187" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1581301563135" />
-    <state width="1209" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1581023614994" />
-    <state width="1277" height="187" key="GridCell.Tab.0.left" timestamp="1581383287499">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1222" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1583421518492" />
+    <state width="1222" height="394" key="GridCell.Tab.0.left" timestamp="1583421518490">
+      <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1580307611246" />
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580240783991" />
     <state width="593" height="187" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1581362029347" />
     <state width="1277" height="187" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1581383287499" />
     <state width="1111" height="187" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1581301563135" />
-    <state width="1209" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1581023614994" />
-    <state width="1277" height="187" key="GridCell.Tab.0.right" timestamp="1581383287501">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1222" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1583421518490" />
+    <state width="1222" height="394" key="GridCell.Tab.0.right" timestamp="1583421518493">
+      <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1580307611247" />
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580240783991" />
     <state width="593" height="187" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1581362029349" />
     <state width="1277" height="187" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1581383287501" />
     <state width="1111" height="187" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1581301563136" />
-    <state width="1209" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1581023614995" />
-    <state x="424" y="127" width="900" height="722" key="SettingsEditor" timestamp="1581292899037">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state width="1222" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1583421518493" />
+    <state x="804" y="368" width="900" height="722" key="SettingsEditor" timestamp="1583353308827">
+      <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state x="424" y="127" width="900" height="722" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1581292899037" />
-    <state x="804" y="368" width="1022" height="737" key="SettingsEditor/70.27.2490.1413@70.27.2490.1413" timestamp="1580400275913" />
+    <state x="804" y="368" width="1022" height="737" key="SettingsEditor/70.27.2490.1413@70.27.2490.1413" timestamp="1583353308827" />
     <state x="125" y="280" width="503" height="313" key="Vcs.Push.Dialog.v2" timestamp="1581359456685">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
@@ -290,9 +297,9 @@
     </state>
     <state x="563" y="388" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1581300278506" />
     <state x="563" y="388" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.826@0.23.1440.826" timestamp="1581295728833" />
-    <state x="302" y="527" width="758" height="420" key="git4idea.merge.GitPullDialog" timestamp="1581008721560">
+    <state x="302" y="527" width="758" height="420" key="git4idea.merge.GitPullDialog" timestamp="1583416469959">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state x="302" y="527" width="758" height="420" key="git4idea.merge.GitPullDialog/70.27.2490.1413@70.27.2490.1413" timestamp="1581008721560" />
+    <state x="302" y="527" width="758" height="420" key="git4idea.merge.GitPullDialog/70.27.2490.1413@70.27.2490.1413" timestamp="1583416469959" />
   </component>
 </project>
