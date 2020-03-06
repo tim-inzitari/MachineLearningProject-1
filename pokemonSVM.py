@@ -71,7 +71,7 @@ print("SVM Gaussian Test set score: {:.2f}%".format(100*svcG.score(X_test, y_tes
 
 
 # Logistic Regression
-LR = LogisticRegression(C=10, random_state=5)
+LR = LogisticRegression(random_state=5)
 LR.fit(X_train, y_train)
 print("Logistic Regression set score: {:.2f}%".format(100*LR.score(X_train, y_train)))
 print("Logistic Regression Test set score: {:.2f}%".format(100*LR.score(X_test, y_test)))
