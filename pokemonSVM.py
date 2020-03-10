@@ -40,13 +40,14 @@ if seeData:
     ax.set_zlabel('Defense')
     plt.show()
 
-X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=.10, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=.1, random_state=42)
 
 # kNN
 knn = KNeighborsClassifier(n_neighbors=5, weights='uniform')
 knn.fit(X_train, y_train)
 print("\nkNN Training set score: {:.2f}%".format(100*knn.score(X_train, y_train)))
 print("kNN Test set score: {:.2f}%".format(100*knn.score(X_test, y_test)))
+print()
 
 # Create classifier object: Create a linear SVM classifier
 # C: Regularization parameter. Default C=1
@@ -54,6 +55,9 @@ svcL = LinearSVC(C=5, random_state=10, tol=1e-4, max_iter=10000)
 svcL.fit(X_train, y_train)
 print("Linear SVM Training set score: {:.2f}%".format(100*svcL.score(X_train, y_train)))
 print("Linear SVM Test set score: {:.2f}%".format(100*svcL.score(X_test, y_test)))
+print("LSvm.coef_: {}".format(svcL.coef_))
+print("LSvm.intercept_: {}".format(svcL.intercept_))
+print()
 
 # Create classifier object: Create a nonlinear SVM classifier
 # kernel, default= radial basis function
@@ -62,6 +66,7 @@ svcP = SVC(C=10, degree=3, kernel='poly', random_state=1)
 svcP.fit(X_train, y_train)
 print("SVM Poly Training set score: {:.2f}%".format(100*svcP.score(X_train, y_train)))
 print("SVM Poly Test set score: {:.2f}%".format(100*svcP.score(X_test, y_test)))
+print()
 
 
 # Create classifier object: Create a nonlinear SVM classifier
@@ -70,13 +75,17 @@ svcG = SVC(C=10)
 svcG.fit(X_train, y_train)
 print("SVM Gaussian Training set score: {:.2f}%".format(100*svcG.score(X_train, y_train)))
 print("SVM Gaussian Test set score: {:.2f}%".format(100*svcG.score(X_test, y_test)))
-
+print()
 
 # Logistic Regression
 LR = LogisticRegression(random_state=5)
 LR.fit(X_train, y_train)
 print("Logistic Regression set score: {:.2f}%".format(100*LR.score(X_train, y_train)))
 print("Logistic Regression Test set score: {:.2f}%".format(100*LR.score(X_test, y_test)))
+# Coefficients of linear model (b_1,b_2,...,b_p): log(p/(1-p)) = b0+b_1x_1+b_2x_2+...+b_px_p
+print("lr.coef_: {}".format(LR.coef_))
+print("lr.intercept_: {}".format(LR.intercept_))
+print()
 
 # Plot non-normalized confusion matrix
 # Knn Matrix
