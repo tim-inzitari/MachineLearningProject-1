@@ -98,22 +98,26 @@ for title, normalize in titles_options:
 plt.show()
 
 # Poly Matrix
-titles_options = [("SVM Poly", None)]
-for title, normalize in titles_options:
-    disp = plot_confusion_matrix(svcP, X_test, y_test,
-                                 display_labels=["Non-Legendary", "Legendary"],
-                                 cmap=plt.cm.Blues)
-    disp.ax_.set_title(title)
-plt.show()
+seePoly = False
+if seePoly:
+    titles_options = [("SVM Poly", None)]
+    for title, normalize in titles_options:
+        disp = plot_confusion_matrix(svcP, X_test, y_test,
+                                     display_labels=["Non-Legendary", "Legendary"],
+                                     cmap=plt.cm.Blues)
+        disp.ax_.set_title(title)
+    plt.show()
 
 # Gaussian Matrix
-titles_options = [("SVM Gaussian", None)]
-for title, normalize in titles_options:
-    disp = plot_confusion_matrix(svcG, X_test, y_test,
-                                 display_labels=["Non-Legendary", "Legendary"],
-                                 cmap=plt.cm.Blues)
-    disp.ax_.set_title(title)
-plt.show()
+seeGaussian = False
+if seeGaussian:
+    titles_options = [("SVM Gaussian", None)]
+    for title, normalize in titles_options:
+        disp = plot_confusion_matrix(svcG, X_test, y_test,
+                                     display_labels=["Non-Legendary", "Legendary"],
+                                     cmap=plt.cm.Blues)
+        disp.ax_.set_title(title)
+    plt.show()
 
 # Logistic Regression
 titles_options = [("Logistic Regression", None)]
