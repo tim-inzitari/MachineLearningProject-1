@@ -83,7 +83,7 @@ print("Logistic Regression Test set score: {:.2f}%".format(100*LR.score(X_test, 
 titles_options = [("KNN", None)]
 for title, normalize in titles_options:
     disp = plot_confusion_matrix(knn, X_test, y_test,
-                                 display_labels=["Legendary", "Non-Legendary"],
+                                 display_labels=["Non-Legendary", "Legendary"],
                                  cmap=plt.cm.Blues)
     disp.ax_.set_title(title)
 plt.show()
@@ -92,7 +92,7 @@ plt.show()
 titles_options = [("SVM Linear", None)]
 for title, normalize in titles_options:
     disp = plot_confusion_matrix(svcL, X_test, y_test,
-                                 display_labels=["Legendary", "Non-Legendary"],
+                                 display_labels=["Non-Legendary", "Legendary"],
                                  cmap=plt.cm.Blues)
     disp.ax_.set_title(title)
 plt.show()
@@ -101,7 +101,7 @@ plt.show()
 titles_options = [("SVM Poly", None)]
 for title, normalize in titles_options:
     disp = plot_confusion_matrix(svcP, X_test, y_test,
-                                 display_labels=["Legendary", "Non-Legendary"],
+                                 display_labels=["Non-Legendary", "Legendary"],
                                  cmap=plt.cm.Blues)
     disp.ax_.set_title(title)
 plt.show()
@@ -110,7 +110,7 @@ plt.show()
 titles_options = [("SVM Gaussian", None)]
 for title, normalize in titles_options:
     disp = plot_confusion_matrix(svcG, X_test, y_test,
-                                 display_labels=["Legendary", "Non-Legendary"],
+                                 display_labels=["Non-Legendary", "Legendary"],
                                  cmap=plt.cm.Blues)
     disp.ax_.set_title(title)
 plt.show()
@@ -119,7 +119,7 @@ plt.show()
 titles_options = [("Logistic Regression", None)]
 for title, normalize in titles_options:
     disp = plot_confusion_matrix(LR, X_test, y_test,
-                                 display_labels=["Legendary", "Non-Legendary"],
+                                 display_labels=["Non-Legendary", "Legendary"],
                                  cmap=plt.cm.Blues)
     disp.ax_.set_title(title)
 plt.show()
