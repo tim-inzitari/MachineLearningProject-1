@@ -20,12 +20,12 @@ y = pokemon['Legendary']
 
 # Random_state: set seed for random# generator
 # Test_size: default 25% testing, 75% training
-X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=.10, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.10, random_state=42)
 print("Our data set consists of " + str(len(pokemon.columns) - 1) + " attributes, however we only use 9 of them.")
 print("Distribution of Legendary Pokemon:")
 print(pokemon['Legendary'].value_counts())
 print("Testing Split: 10% testing and 90% training")
-seeData = False
+seeData = True
 if seeData:
     # plotting a scatter matrix
     cmap = cm.get_cmap('gnuplot')
@@ -33,12 +33,14 @@ if seeData:
     # plotting a 3D scatter plot
     from mpl_toolkits.mplot3d import axes3d   # must keep
     fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
+    ax = fig.add_subplot(111, projection = '3d')
     ax.scatter(X_train['Total'], X_train['Attack'], X_train['Defense'], c=y_train, marker='o', s=100)
     ax.set_xlabel('Total')
     ax.set_ylabel('Attack')
     ax.set_zlabel('Defense')
     plt.show()
+
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=.10, random_state=42)
 
 # kNN
 knn = KNeighborsClassifier(n_neighbors=5, weights='uniform')
