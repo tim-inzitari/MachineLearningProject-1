@@ -1,4 +1,5 @@
 import pandas as pd
+from sklearn import preprocessing
 ###############################
 # dataset: Probability of passing an exam versus hours of study
 ###############################
@@ -6,6 +7,13 @@ import pandas as pd
 d = {'hours': [0.5, 0.75, 1, 1.25, 1.5, 1.75, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 4, 4.25, 4.5, 4.75, 5, 5.5],
      'pass': [0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1]}
 HrsStudying = pd.DataFrame(data=d)
+
+# Pokemon Data
+pokemon = pd.read_csv('Pokemon.csv', sep=',')
+pokemon.columns = pokemon.columns.str.replace(' ', '_')
+
+
+
 
 import matplotlib.pyplot as plt
 plt.plot(HrsStudying["hours"], HrsStudying["pass"], 'ro')
@@ -52,7 +60,6 @@ import pandas as pd
 
 fruits = pd.read_csv('fruit_data_with_colors.txt', sep='\t')
 lookup_fruit_name = dict(zip(fruits.fruit_label.unique(), fruits.fruit_name.unique()))
-
 X = fruits[['height', 'width', 'mass', 'color_score']]
 y = fruits['fruit_label']
 
@@ -61,8 +68,9 @@ from sklearn.model_selection import train_test_split
 #test_size: default 25% testing, 75% training
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.25, random_state=42)
 
+
 from sklearn.linear_model import LogisticRegression
-lr = LogisticRegression(random_state=40)
+lr = LogisticRegression(random_state=40, max_iter=100000)
 lr.fit(X_train, y_train)
 
 #########################################
